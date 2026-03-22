@@ -429,7 +429,7 @@ TEMPLATE = """
 """
 
 USER_WALLET = "0x9bbe5840e8915b652a5fb44a8237b08d44cb12c5"
-swaps_df, deposits_df, sends_df = parse_eth_transactions("ethplorer.csv", USER_WALLET)
+swaps_df, deposits_df, sends_df = parse_eth_transactions("real_data.csv", USER_WALLET)
 
 swaps_df = swaps_df.copy()
 if not swaps_df.empty:
